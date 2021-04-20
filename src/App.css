@@ -25,6 +25,12 @@
 .App-link {
   color: rgb(112, 76, 182);
 }
+table .w-5 {
+  width: 5%;
+}
+table .w-10 {
+  width: 10%;
+}
 
 @keyframes App-logo-float {
   0% {
