@@ -18,7 +18,7 @@ export const ToDoList = () => {
       <Table striped bordered hover>
         <tbody>
           {toDoItems.map((todo) => {
-            return <ToDoListItem id={todo.id} title={todo.title} status={todo.status} />;
+            return <ToDoListItem  todo={todo} />;
           })}
         </tbody>
       </Table>

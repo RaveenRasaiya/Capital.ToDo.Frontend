@@ -4,12 +4,12 @@ import { Trash } from "react-bootstrap-icons";
 import { DeleteToDo } from '../services/todoService';
 import { useDispatch } from 'react-redux';
 
-export const ToDoListItem = ({ id, title, status }) => {
+export const ToDoListItem = ({ todo }) => {
   const dispatch = useDispatch();
 
 
   return (
-    <tr key={id}>
+    <tr key={todo.id}>
       <td className="w-5">
         <InputGroup>
           <InputGroup.Prepend>
@@ -17,9 +17,9 @@ export const ToDoListItem = ({ id, title, status }) => {
           </InputGroup.Prepend>
         </InputGroup>
       </td>
-      <td style={{ textAlign: "left" }}>{title}</td>
+      <td style={{ textAlign: "left" }}>{todo.title}</td>
       <td className="w-10">
-        <Trash color="red" onClick={()=> DeleteToDo(dispatch,id)} />
+        <Trash color="red" onClick={()=> DeleteToDo(dispatch,todo.id)} />
       </td>
     </tr>
   );
