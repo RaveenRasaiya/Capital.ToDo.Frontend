@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Form, Modal, Button, InputGroup, FormControl } from "react-bootstrap";
+import { Form, Modal, Button } from "react-bootstrap";
 import { NewToDo, ModifyToDo } from "../services/todoService";
 
 export const NewToDoModal = () => {
